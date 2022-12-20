@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+
+    background-color: var(--very-dark-blue-main-bg);
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__component{
+    background-color: var(--very-dark-blue-card-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 326px;
+    height: 543px;
+    border-radius: 10px;
+}
+.image{
+    background-image: url("../images/image-equilibrium.jpg");
+    background-size: cover;
+    width: 276px;
+    height: 277px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.content{
+    width: 276px;
+}
+.title{
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+.title:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+.description{
+    font-size: 16px;
+    color: var(--soft-blue);
+    margin-top: 12px;
+    line-height: 26px;
+}
+.eth__cont{
+    width: 276px;
+    display: flex;
+    justify-content: space-between;
+}
+.eth__value{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    color: var(--cyan);
+}
+.eth__value img{
+    width: 11px;
+}
+.date{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 15px;
+    color: var(--soft-blue);
+}
+.line{
+    width: 276px;
+    height: 1px;
+    background-color: var(--very-dark-blue-line);
+    margin-top: 16px;
+}
+
+.author{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--soft-blue);
+    font-size: 15px;
+}
+.author img{
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+}
+
+.name{
+    display:flex;
+    gap: 5px;
+}
+.name span{
+    color: var(--white);
+}
+.name span:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
